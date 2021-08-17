@@ -1,4 +1,5 @@
-venv/*
+venv/* 
+#means not going to push stuff in the venv to github as unnescessary
 __pycache__/
 *.sqlite3
 *.vscode
