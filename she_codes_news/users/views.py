@@ -1,7 +1,8 @@
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
-from django.views import generic
-from .models import CustomUser
+from .models import Profile
+#from django.views import generic
+#from .models import CustomUser
 from .forms import CustomUserCreationForm
 
 class CreateAccountView(CreateView):
@@ -9,8 +10,8 @@ class CreateAccountView(CreateView):
     success_url = reverse_lazy('login')
     template_name = 'users/createAccount.html'
 
-class UserProfile(UserProfile):
-    form_class = CustomUserCreationForm
+class UserProfile(Profile):
+    #model= UserProfile
     success_url = reverse_lazy('login')
-    template_name = 'users/createAccount.html'
+    template_name = 'users/profile.html'
      

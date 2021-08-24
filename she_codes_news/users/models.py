@@ -7,8 +7,8 @@ class CustomUser(AbstractUser):
     def __str__(self):
         return self.username
 
-class UserProfile(AbstractUser):
+class Profile(models.Model):
     pass
-
+    
     def __str__(profile):
-        return profile.username
+        return profile.users
