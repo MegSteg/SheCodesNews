@@ -7,3 +7,8 @@ class CustomUser(AbstractUser):
     def __str__(self):
         return self.username
 
+class UserProfile(AbstractUser):
+    pass
+
+    def __str__(profile):
+        return profile.username
