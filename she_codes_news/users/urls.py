@@ -10,7 +10,7 @@ name='createAccount'),
 
 ]
 
-urlpatterns = [
-    path('User-Profile/', UserProfile.as_view(), #latest error HERE
-name='User Profile'),
-]
+#urlpatterns = [
+ #   path('User-Profile/', UserProfile.as_view(), #latest error HERE
+#name='User Profile'),
+#]
